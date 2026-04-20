@@ -8,23 +8,11 @@
 		</div>
 	</div>
 
-	<!-- Botão Hamburguer (visível em telas pequenas) -->
-	<button
-		class="hamburger-button"
-		type="button"
-		aria-label="Abrir menu"
-		[attr.aria-expanded]="isMenuOpen"
-		(click)="toggleMenu()">
-		<span class="hamburger-bar"></span>
-		<span class="hamburger-bar"></span>
-		<span class="hamburger-bar"></span>
-	</button>
-
 	<!-- Navegação desktop -->
 	<div class="header-nav-section"></div>
 	<nav class="main-nav-links desktop-only">
 		<a routerLink="/inicio" class="nav-link">Início</a>
-		<a routerLink="/servicos"  class="nav-link">Serviços</a>
+		<a routerLink="/servicos" class="nav-link">Serviços</a>
 		<a routerLink="/projetos" class="nav-link">Projetos</a>
 		<a routerLink="/sobre" class="nav-link">Sobre</a>
 		<a routerLink="/contato" class="nav-link">Contato</a>
@@ -33,7 +21,8 @@
 	<hr class="desktop-only">
 
 	<button class="quote-button desktop-only">
-		<a class="truncate" href="https://wa.me/5511952924797?text=Olá, gostaria de solicitar um orçamento.">Solicitar Orçamento</a>
+		<a class="truncate" href="https://wa.me/5511952924797?text=Olá, gostaria de solicitar um orçamento.">Solicitar
+			Orçamento</a>
 	</button>
 </header>
 
@@ -44,5 +33,14 @@
 	<a routerLink="/projetos" class="mobile-link" (click)="closeMenu()">Projetos</a>
 	<a routerLink="/sobre" class="mobile-link" (click)="closeMenu()">Sobre</a>
 	<a routerLink="/contato" class="mobile-link" (click)="closeMenu()">Contato</a>
-	<a class="mobile-quote" href="https://wa.me/5511952924797?text=Olá, gostaria de solicitar um orçamento." (click)="closeMenu()">Solicitar Orçamento</a>
+	<a class="mobile-quote" href="https://wa.me/5511952924797?text=Olá, gostaria de solicitar um orçamento."
+		(click)="closeMenu()">Solicitar Orçamento</a>
 </nav>
+
+<!-- Botão Hamburguer (visível em telas pequenas) -->
+<button class="hamburger-button" type="button" aria-label="Abrir menu" [attr.aria-expanded]="isMenuOpen"
+	(click)="toggleMenu()">
+	<span class="hamburger-bar"></span>
+	<span class="hamburger-bar"></span>
+	<span class="hamburger-bar"></span>
+</button>
