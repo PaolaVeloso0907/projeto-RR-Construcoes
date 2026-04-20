@@ -9,14 +9,6 @@
     margin: 0 auto;
 }
 
-.content-container {
-    display: flex;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1 0 0;
-}
-
 .coluna-metade {
     flex: 3;
     padding: 30px;
@@ -41,7 +33,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    /* Adiciona um bom espaçamento vertical entre as seções (como entre as Infos e o Mapa) */
     flex: 2;
     align-self: stretch;
 }
@@ -163,84 +154,6 @@
     color: var(--cor-principal);
 }
 
-/* Responsividade - Contato */
-@media (max-width: 1024px) {
-    .content-wrapper {
-        padding: 1.5rem;
-    }
-    .content-container {
-        max-width: 860px;
-    }
-}
-
-@media (max-width: 768px) {
-    .content-wrapper {
-        padding: 1rem 1rem 2rem 1rem;
-        align-items: stretch;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .content-container {
-        max-width: 100%;
-    }
-    .coluna-metade,
-    .info-mapa-coluna {
-        width: 100%;
-        padding: 18px 12px;
-    }
-    .form-field-group {
-        width: 100%;
-    }
-    .form-textarea-field {
-        min-width: 0;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .content-wrapper {
-        padding: 0.75rem 0.75rem 1.5rem 0.75rem;
-    }
-    .coluna-metade,
-    .info-mapa-coluna {
-        padding: 12px 8px;
-    }
-}
-
-/* Estilos da Seção de Informações de Contato */
-.info-title {
-    color: var(--azul-escuro);
-    align-self: stretch;
-    font-feature-settings: 'dlig' on;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-}
-
-.info-description {
-    display: flex;
-    color: var(--cinza-escuro);
-    font-feature-settings: 'dlig' on;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: -1rem;
-}
-
-.info-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    color: var(--cinza-escuro);
-    font-feature-settings: 'dlig' on;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
 
 /* Estilos do Mapa Incorporado */
 .mapa-container {
